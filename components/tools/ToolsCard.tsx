@@ -130,13 +130,13 @@ export default function ToolsCard({ toolData }: ToolsCardProp) {
                   read={readMore}
                   setRead={setReadMore}
                 />
-             <div className='flex gap-2'>
-  {Array.isArray(toolData.filters?.language) &&
-    toolData.filters?.language.map((item, index) => (
-      <Tag key={index} name={item.name} bgColor={item.color} borderColor={item.borderColor} />
-    ))}
-</div>
-            </div>
+                <div className='flex gap-2'>
+                  {Array.isArray(toolData.filters?.language) &&
+                    toolData.filters?.language.map((item, index) => (
+                      <Tag key={index} name={item.name} bgColor={item.color} borderColor={item.borderColor} />
+                    ))}
+                </div>
+              </div>
             )}
             {toolData.filters.technology?.length !== 0 && (
               <div className='mx-6 my-4 flex flex-col gap-2'>
