@@ -101,20 +101,7 @@
                     "technology": ["WebSocket"],
                     "categories": ["generator-template"]
                 }
-            },
-            {
-                "title": "TypeScript NATS Template",
-                "description": "Generates TypeScript client using NATS",
-                "links": {
-                    "repoUrl": "https://github.com/asyncapi/ts-nats-template"
-                },
-                "filters": {
-                    "language": "TypeScript",
-                    "technology": ["NATS"],
-                    "categories": ["generator-template"]
-                }
             }
-
         ]
     },
     "Code-first tools": {
