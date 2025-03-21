@@ -7,5 +7,5 @@
   { "value": "@asyncapi/java-spring-template", "text": "Java Spring Boot" },
   { "value": "@asyncapi/python-paho-template", "text": "Python Paho" },
   { "value": "@asyncapi/go-watermill-template", "text": "Go Watermill" },
-  { "value": "@asyncapi/dotnet-rabbitmq-template", "text": ".NET RabbitMQ" },
+  { "value": "@asyncapi/dotnet-rabbitmq-template", "text": ".NET RabbitMQ" }
 ]
