@@ -12,9 +12,8 @@ import SearchIcon from '../icons/Search';
 import CategoryDropdown from './CategoryDropdown';
 import Filters from './Filters';
 import ToolsList from './ToolsList';
-
-const ToolsData = ToolsDataList as ToolsListData;
-
+import { processToolsData } from '@/utils/processToolsData';
+const ToolsData = processToolsData() as ToolsListData;
 /**
  * @description This component displays Tools Dashboard.
  */
@@ -60,7 +59,7 @@ export default function ToolsDashboard() {
   });
 
   // useMemo function to filter the tools according to the filters applied by the user
-  const toolsList = useMemo(() => {
+  const toolsList = useMemo<ToolsListData>(() => {
     let tempToolsList: ToolsListData = {};
 
     // Tools data list is first filtered according to the category filter if applied by the user.
